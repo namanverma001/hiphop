@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #00e5fa;
+    --primary-foreground: #00565d;
+    --primary-light: #33e8fb;
+    --primary-dark: #00c4d7;
+
+    /* Secondary Colors */
+    --secondary-background: #ee3483;
+    --secondary-foreground: #ffffff;
+    --secondary-light: #f158a0;
+    --secondary-dark: #d12a75;
+
+    /* Accent Colors */
+    --accent-background: #f7f7f7;
+    --accent-foreground: #262626;
+    --accent-light: #ffffff;
+    --accent-dark: #080808;
+
+    /* Text Colors */
+    --text-primary: #262626;
+    --text-secondary: #6a6a6a;
+    --text-muted: #00565d;
+    --text-accent: #ee3483;
+    --text-light: #ffffff;
+    --text-dark: #080808;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-secondary: #f7f7f7;
+    --bg-accent: #00e5fa;
+    --bg-highlight: #ee3483;
+
+    /* Border Colors */
+    --border-primary: #c8c8c8;
+    --border-secondary: #b1b1b1;
+    --border-light: #e0e0e0;
+
+    /* Component Colors */
+    --header-bg: #ffffff;
+    --button-primary-bg: #00e5fa;
+    --button-secondary-bg: #ee3483;
+    --search-border: #c8c8c8;
+    --link-bg: #00e5fa;
+
+    /* Typography Variables */
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-sm: 21px;
+    --line-height-base: 24px;
+    --line-height-md: 26px;
+    --line-height-lg: 27px;
+    --line-height-xl: 30px;
+    --line-height-2xl: 36px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-md: 10px;
+    --spacing-lg: 12px;
+    --spacing-xl: 14px;
+    --spacing-2xl: 20px;
+    --spacing-3xl: 22px;
+    --spacing-4xl: 24px;
+    --spacing-5xl: 26px;
+    --spacing-6xl: 28px;
+    --spacing-7xl: 32px;
+    --spacing-8xl: 34px;
+    --spacing-9xl: 36px;
+    --spacing-10xl: 40px;
+    --spacing-11xl: 42px;
+    --spacing-12xl: 54px;
+    --spacing-13xl: 58px;
+    --spacing-14xl: 60px;
+
+    /* Border Radius Variables */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 22px;
+    --radius-2xl: 26px;
+    --radius-full: 88px;
+
+    /* Layout Variables */
+    --width-logo: 64px;
+    --width-small: 12%;
+    --width-medium: 14%;
+    --width-large: 32%;
+    --width-xlarge: 34%;
+    --width-container: 176px;
+    --width-full: 100%;
+  }
+}
