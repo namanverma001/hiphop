@@ -7,20 +7,20 @@ const Header = () => {
 
   return (
     <header className="w-full bg-header-background">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[60px]">
+      <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3 lg:py-[12px]">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src="/images/img_header_logo.png" 
-              alt="Hip Hop Boombox Logo" 
-              className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16"
+            <img
+              src="/images/img_header_logo.png"
+              alt="Hip Hop Boombox Logo"
+              className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
             />
           </div>
 
           {/* Hamburger Menu Icon (Mobile only) */}
-          <button 
-            className="block lg:hidden p-2" 
+          <button
+            className="block lg:hidden p-2"
             aria-label="Open menu"
             onClick={() => setMenuOpen(!menuOpen)}
           >
@@ -34,16 +34,16 @@ const Header = () => {
             <div className="flex items-center gap-[10px] w-full">
               {/* Link/Icon Button */}
               <button className="flex-shrink-0 w-11 h-11 bg-primary-background rounded-[22px] flex items-center justify-center hover:opacity-90 transition-opacity">
-                <img 
-                  src="/images/img_frame_8032.svg" 
-                  alt="Menu" 
+                <img
+                  src="/images/img_frame_8032.svg"
+                  alt="Menu"
                   className="w-5 h-5"
                 />
               </button>
-              
+
               {/* Search View */}
               <div className="flex-1">
-                <SearchView 
+                <SearchView
                   placeholder="What do you want to play?"
                   leftIcon={true}
                   rightIcon={true}
@@ -55,9 +55,9 @@ const Header = () => {
                   variant="default"
                   size="md"
                   value=""
-                  onChange={() => {}}
-                  onFocus={() => {}}
-                  onBlur={() => {}}
+                  onChange={() => { }}
+                  onFocus={() => { }}
+                  onBlur={() => { }}
                 />
               </div>
             </div>
@@ -70,9 +70,9 @@ const Header = () => {
               <button className="text-base font-semibold text-text-primary hover:text-primary-foreground transition-colors">
                 Sign Up
               </button>
-              
+
               {/* Log In Button */}
-              <Button 
+              <Button
                 text="Log In"
                 className="w-full lg:w-auto"
                 layout_width="auto"
@@ -81,7 +81,7 @@ const Header = () => {
                 layout_gap="sm"
                 variant="primary"
                 size="md"
-                onClick={() => {}}
+                onClick={() => { }}
               />
             </div>
           </nav>
@@ -91,13 +91,13 @@ const Header = () => {
             <div className="absolute top-full left-0 w-full bg-white shadow-lg p-4 lg:hidden z-40">
               <div className="flex items-center gap-2 mb-4">
                 <button className="flex-shrink-0 w-11 h-11 bg-primary-background rounded-[22px] flex items-center justify-center">
-                  <img 
-                    src="/images/img_frame_8032.svg" 
-                    alt="Menu" 
+                  <img
+                    src="/images/img_frame_8032.svg"
+                    alt="Menu"
                     className="w-5 h-5"
                   />
                 </button>
-                <SearchView 
+                <SearchView
                   placeholder="What do you want to play?"
                   leftIcon={true}
                   rightIcon={true}
@@ -109,9 +109,9 @@ const Header = () => {
                   variant="default"
                   size="md"
                   value=""
-                  onChange={() => {}}
-                  onFocus={() => {}}
-                  onBlur={() => {}}
+                  onChange={() => { }}
+                  onFocus={() => { }}
+                  onBlur={() => { }}
                 />
               </div>
             </div>

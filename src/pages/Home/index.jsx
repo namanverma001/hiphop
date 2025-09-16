@@ -19,17 +19,17 @@ const Home = () => {
         <meta property="og:description" content="Discover hip hop music, trending artists, curated playlists, radio stations & podcasts. Stream your favorite tracks and explore the vibrant world of urban music culture." />
       </Helmet>
 
-      <main className="w-full bg-background-main">
+      <main className="w-full bg-background-main min-h-screen">
         <Header />
-        
+
         <div className="w-full">
-          <div className="w-full max-w-[1440px] mx-auto">
-            <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 px-4 sm:px-6 lg:px-0">
+          <div className="w-full max-w-screen-2xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 px-4 sm:px-6 lg:px-6">
               {/* Sidebar */}
               <div className="w-full lg:w-large lg:pr-2.5">
                 <SidebarSection />
               </div>
-              
+
               {/* Main Content */}
               <div className="w-full lg:flex-1 lg:pl-10 lg:pr-7">
                 <div className="flex flex-col gap-6 lg:gap-3xl py-5 lg:py-0">

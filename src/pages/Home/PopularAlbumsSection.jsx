@@ -16,7 +16,7 @@ const PopularAlbumsSection = () => {
     },
     {
       id: 3,
-      name: "Album Name", 
+      name: "Album Name",
       artist: "Artist Name",
       image: "/images/img_image_5.png"
     },
@@ -45,18 +45,18 @@ const PopularAlbumsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8xl">
           {albums?.map((album) => (
             <div key={album?.id} className="flex flex-col items-center gap-3.5">
-              <div className="w-full max-w-[176px] aspect-square">
-                <img 
+              <div className="w-full max-w-[140px] aspect-square">
+                <img
                   src={album?.image}
                   alt={album?.name}
                   className="w-full h-full object-cover rounded-md"
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-text-primary leading-xl">
+                <h3 className="text-base font-semibold text-text-primary leading-normal">
                   {album?.name}
                 </h3>
-                <p className="text-base font-normal text-text-primary leading-xl">
+                <p className="text-sm font-normal text-text-primary leading-normal">
                   {album?.artist}
                 </p>
               </div>

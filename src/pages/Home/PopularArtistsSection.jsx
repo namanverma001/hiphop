@@ -11,7 +11,7 @@ const PopularArtistsSection = () => {
     {
       id: 2,
       name: "Artist Name",
-      role: "Artist", 
+      role: "Artist",
       image: "/images/img_image_176x176.png"
     },
     {
@@ -45,18 +45,18 @@ const PopularArtistsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8xl">
           {artists?.map((artist) => (
             <div key={artist?.id} className="flex flex-col items-center gap-3.5">
-              <div className="w-full max-w-[176px] aspect-square">
-                <img 
+              <div className="w-full max-w-[120px] aspect-square">
+                <img
                   src={artist?.image}
                   alt={artist?.name}
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-text-primary leading-xl">
+                <h3 className="text-base font-semibold text-text-primary leading-normal">
                   {artist?.name}
                 </h3>
-                <p className="text-base font-normal text-text-primary leading-xl">
+                <p className="text-sm font-normal text-text-primary leading-normal">
                   {artist?.role}
                 </p>
               </div>
