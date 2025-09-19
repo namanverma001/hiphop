@@ -36,7 +36,10 @@ const PopularAlbumsSection = () => {
           <h2 className="text-xl sm:text-2xl font-bold text-text-primary">
             Popular albums and singles
           </h2>
-          <button className="text-base font-medium text-text-accent hover:opacity-80 transition-opacity">
+          <button
+            onClick={() => window.location.href = '/entertainment'}
+            className="text-base font-medium text-text-accent hover:opacity-80 transition-opacity"
+          >
             Show all
           </button>
         </div>

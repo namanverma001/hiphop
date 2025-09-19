@@ -32,7 +32,10 @@ const FeaturedChartsSection = () => {
           <h2 className="text-xl sm:text-2xl font-bold text-text-primary">
             Featured Charts
           </h2>
-          <button className="text-base font-medium text-text-accent hover:opacity-80 transition-opacity">
+          <button
+            onClick={() => window.location.href = '/entertainment'}
+            className="text-base font-medium text-text-accent hover:opacity-80 transition-opacity"
+          >
             Show all
           </button>
         </div>
@@ -42,7 +45,7 @@ const FeaturedChartsSection = () => {
           {charts?.map((chart) => (
             <div key={chart?.id} className="flex flex-col gap-3.5 w-full max-w-[176px] mx-auto lg:mx-0">
               <div className="w-full aspect-square">
-                <img 
+                <img
                   src={chart?.image}
                   alt="Featured Chart"
                   className="w-full h-full object-cover rounded-md"
